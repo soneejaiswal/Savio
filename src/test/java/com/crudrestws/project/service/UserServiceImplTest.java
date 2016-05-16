@@ -13,9 +13,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.demorestws.project.DemoRestWsApplication;
-import com.demorestws.project.domain.User;
-import com.demorestws.project.service.UserService;
+import com.vatsa.savio.DemoRestWsApplication;
+import com.vatsa.savio.domain.User;
+import com.vatsa.savio.service.UserService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(DemoRestWsApplication.class)
