@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.crudrestws.project.DemoRestWsApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.529 sec - in com.crudrestws.project.DemoRestWsApplicationTests
