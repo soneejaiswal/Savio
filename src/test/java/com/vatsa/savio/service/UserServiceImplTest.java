@@ -1,4 +1,4 @@
-package com.crudrestws.project.service;
+package com.vatsa.savio.service;
 
 import static org.junit.Assert.*;
 

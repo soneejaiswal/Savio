@@ -1,4 +1,4 @@
-package com.crudrestws.project;
+package com.vatsa.savio;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
