@@ -1,8 +1,8 @@
 package com.vatsa.savio.core.constants;
 
-public interface CustomerUriConstants {
+public interface PartyUriConstants {
 	
-	String REGISTER_CUSTOMER = "" ;
+	String REGISTER_PARTY = "user" ;
 
 	/*REGISTER_CUSTOMER("/user") ;
 
