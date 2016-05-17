@@ -1,6 +1,7 @@
 package com.vatsa.savio.controller;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,14 +22,13 @@ public class PartyController {
 	/*@RequestMapping(value = CustomerUriConstants.REGISTER_CUSTOMER, method = RequestMethod.POST, headers = "content-type=application/json")*/
 
 	@RequestMapping(value = PartyUriConstants.REGISTER_PARTY, method = RequestMethod.GET)
-	public String saveParty(HttpServletRequest req) {
+	public String saveParty(HttpServletRequest req, HttpServletResponse resp) {
 		
 		log.trace("test log");
 		System.out.println("sysout test log");
-
-//		return "Test String" ;
 		
 		req.setAttribute("responseMsg", "Query string parameter 'app-id' not specified");
+		
 		
 		return "response" ;
 	}
