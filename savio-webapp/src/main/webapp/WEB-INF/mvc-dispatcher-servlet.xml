@@ -9,6 +9,16 @@
         http://www.springframework.org/schema/context 
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<context:component-scan base-package="com.vatsa.savio.controller" />
+	<mvc:annotation-driven />
+	<context:component-scan base-package="com.vatsa.savio" />
+
+	<!-- <bean id = "partyService" class = "com.vatsa.savio.core.service.PartyService"/> 
+		<bean id = "partyRepository" class = "com.vatsa.savio.core.repository.PartyRepository"/> -->
+		
+		<bean id = "partyService" class = "com.vatsa.savio.core.service.PartyService"/> 
+		
+		<bean id = "partyRepository" class = "com.vatsa.savio.core.repository.PartyRepository">		
+		
+		</bean> 
 
 </beans>
