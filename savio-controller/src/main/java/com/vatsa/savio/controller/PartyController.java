@@ -24,13 +24,13 @@ public class PartyController {
 	private PartyService partyService;
 
 	@RequestMapping(value = PartyUriConstants.REGISTER_PARTY, method = RequestMethod.POST)
-	
-	public void saveParty(@RequestBody Party party) throws IOException {
+
+	public Party saveParty(@RequestBody Party party) throws IOException {
 		log.trace("test log");
 		System.out.println("sysout test log");
 		System.out.println(party.getPartyMobile());
-		partyService.saveParty(party);
-		/*return );*/
+		return partyService.saveParty(party);
+
 	}
 
 	@RequestMapping(value = "/hello")

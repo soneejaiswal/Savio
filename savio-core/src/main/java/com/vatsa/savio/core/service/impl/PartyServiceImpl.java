@@ -20,8 +20,8 @@ public class PartyServiceImpl implements PartyService {
 	public Party saveParty(Party party) {
 		System.out.println("inside party service");
 		System.out.println(party.getDateOfBirth());
-		/*return (Party) partyRepository.save(party);*/
-		return null;
+		return (Party) partyRepository.save(party);
+	
 	}
 }
 //@Qualifier("SimpleJpaRepository")
