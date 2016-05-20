@@ -21,17 +21,21 @@ public class PartyController {
 	private final Logger log = LoggerFactory.getLogger(PartyController.class);
 
 	@Autowired
-	private PartyService partyService ;
-
+	private PartyService partyService;
 
 	@RequestMapping(value = PartyUriConstants.REGISTER_PARTY, method = RequestMethod.POST)
-	public @ResponseBody Party saveParty(@RequestBody Party party) throws IOException {
 
+	public Party saveParty(@RequestBody Party party) throws IOException {
 		log.trace("test log");
 		System.out.println("sysout test log");
-
-		//		return "response body test string" ;
-
+		System.out.println(party.getPartyMobile());
 		return partyService.saveParty(party);
+
+	}
+
+	@RequestMapping(value = "/hello")
+	public String getHello() {
+		System.out.println("in hello");
+		return "hello";
 	}
 }
